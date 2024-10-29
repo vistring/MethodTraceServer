@@ -1,0 +1,1 @@
+python mvcCodeGenerate.py -fc -mh 1978iy9407.zicp.fun -mp 13306 -mun root -mpw 112233 -dn bill -tn xxx -v 1

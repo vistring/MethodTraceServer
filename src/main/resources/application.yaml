@@ -1,0 +1,38 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    active: dev
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ssZ
+  mail:
+    host: smtp.qq.com
+    username: cxj_xiaojinzi@foxmail.com
+    password: lhpcjlzariblcaga
+    protocol: smtp
+    port: 587
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://1978iy9407.zicp.fun:13306/method_trace?serverTimezone=GMT%2B0&characterEncoding=utf8
+    username: root
+    password: 112233
+
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  servlet:
+    context-path: ""
+  port: 8080
+logging:
+  level:
+    com:
+      baomidou:
+        # mybatisplus: DEBUG
+
+
